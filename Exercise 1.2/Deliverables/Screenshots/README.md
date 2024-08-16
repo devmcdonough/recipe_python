@@ -40,3 +40,8 @@ This project aims to showcase your understanding of Python fundamentals and your
 - **Python Compatibility**: The app should work on Python 3.6+ installations.
 - **Code Quality**: Ensure that the code is well-formatted according to standardized guidelines.
 - **Comments**: Support the code with concise and helpful comments that illustrate the program's flow.
+
+## Reason for Choosing Data Structures
+
+- **Single Recipes**: I chose to use dictionaries to store each individual recipe. The reason I chose this was that recipes require multiple data types and dictionaries are the best way to handle diverse data types.
+- **All Recipes**: For all_recipes I chose to use a list because it contained a single data type, dictionaries and is the easiest to manipulate and change the order of.
