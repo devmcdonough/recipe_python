@@ -27,6 +27,12 @@ class BookModelTest(TestCase):
         # Get metadata for author_name field and query its max length
         max_length = book._meta.get_field('author_name').max_length
         # Compare the value to the expected result
-        self.assertEqual(max_length, 100)
+        self.assertEqual(max_length, 120)
+
+    def test_get_absolute_url(self):
+        # Get a book object to test
+        book = Book.objects.get(id=1)
+        #get_absolute_url() should take you to the detail page of book 1 and load url books/list/1
+        self.assertEqual(book.get_absolute_url(), '/books/list/1')
 
     

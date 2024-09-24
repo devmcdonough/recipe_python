@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +8,9 @@
     <title>Bookstore Home</title>
 </head>
 <body>
-    Welcome to the bookstore. We got books and games.
+    <h2 style="text-align: center;">Welcome to the bookstore. We got books and games.</h2> 
+    <div style="text-align: center;">
+        <img src="{% static 'sales/images/bookstore.jpg' %}" alt="home" width="600" height="300">
+    </div>
 </body>
 </html>
