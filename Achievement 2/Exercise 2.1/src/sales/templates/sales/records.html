@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Searching for records...</h2>
+    <h2>Search Sales Records</h2>
+
+    <hr>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Search</button>
+    </form>
+    <hr>
+    {% if sales_df %}
+        {{sales_df|safe}}
+        <br>
+        <img src="data:image/png;base64, {{chart|safe}}"
+    {% else %}
+        <h3>no data</h3>
+    {% endif %}
 </body>
 </html>
